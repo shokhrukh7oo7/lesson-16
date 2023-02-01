@@ -1,0 +1,273 @@
+#navbar-responsive {
+  display: none;
+}
+/**/
+.back-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.back-top:hover {
+  box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 10px #03e9f4,
+    0 0 10px #03e9f4;
+}
+
+/**/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/**/
+.dropdown {
+  transition: 0.5s;
+  transform: translateY(50px);
+  opacity: 0;
+  position: absolute;
+  left: 50;
+  top: 50px;
+  background-color: transparent;
+}
+
+.dropdown ul {
+  flex-direction: column;
+}
+
+.navbar ul li:hover .dropdown {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+header {
+  background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+
+/**/
+nav {
+  /* background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%); */
+  padding: 23px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  transition: 0.1s;
+}
+
+.navbar-shrink {
+  background-color: black;
+  padding: 15px 0;
+}
+
+.nav-item img {
+  cursor: pointer;
+  position: absolute;
+  max-width: 40px;
+  height: 50px;
+  margin-left: -35px;
+  margin-top: -13px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-logo h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item a {
+  padding: 0 27px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8b8e99;
+}
+
+.nav-item a:hover {
+  color: aqua;
+}
+
+.nav-right {
+  cursor: pointer;
+}
+
+#navbar-open {
+  display: none;
+}
+/**/
+
+.left-right-intro {
+  max-width: 100%;
+  grid-template-columns: 50% 50%;
+  /* background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%); */
+  padding-top: 73px;
+  padding-bottom: 100px;
+}
+
+.left-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  max-width: 100%;
+}
+
+.left h1 {
+  max-width: 440px;
+  margin-top: 177px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 125.5%;
+  color: #ffffff;
+}
+
+.left p {
+  max-width: 456px;
+  padding-top: 35px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #8b8e99;
+}
+
+.home-input {
+  position: relative;
+  margin-top: 50px;
+}
+
+.home-input #search {
+  width: 443px;
+  height: 60px;
+  padding: 0px 130px 0px 56px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: rgba(139, 142, 153, 0.7);
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.home-input #search:hover {
+  box-shadow: 0 0 5px #a9acb7, 0 0 5px #a9acb7, 0 0 5px #a9acb7, 0 0 5px #a9acb7;
+}
+
+.home-input form > i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 32px;
+  color: #3858d6;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.home-input #submit {
+  position: absolute;
+  background: #3858d6;
+  border-radius: 9px;
+  right: 25px;
+  top: 7px;
+  cursor: pointer;
+  border: transparent;
+  width: 112px;
+  height: 45px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.home-input #submit:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px #a9acb7, 0 0 5px #a9acb7, 0 0 5px #a9acb7, 0 0 5px #a9acb7;
+}
+
+.right img {
+  max-width: 100%;
+  margin-top: 120px;
+  object-fit: cover;
+  /* transition: 0.8s; */
+  animation: move 1s infinite alternate;
+}
+
+.right:hover img {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@keyframes move {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+#dark-light {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#dark-light img {
+  width: 25px;
+  height: 25px;
+}
+
+.dark {
+  background-color: #fff;
+}
+
+.dark * {
+  color: black !important;
+}
+
+.dark nav {
+  background: #8b8e99;
+}
+
+.dark .left-right-intro {
+  background: #8b8e99;
+}
+
+.dark #footer {
+  background: #8b8e99;
+}
